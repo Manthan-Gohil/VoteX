@@ -9,4 +9,5 @@ router.get('/voting/:departmentId', isLoggedIn, getVotingPage);
 router.post('/vote', isLoggedIn, castVote);
 router.get('/thankyou', thankYou);
 
+
 module.exports = router;

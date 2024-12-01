@@ -1,9 +1,9 @@
-{{!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{pageTitle}}</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="/stylesheets/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,8 @@
                 <!-- <img src="/images/bmu logo.png" alt="bmu-logo"> -->
                 <a href="/" style="padding-left: 30px;">
                     <div class="captain1-content">
-                        <h2>{{content}}</h2>
-                        <h2>{{content}}</h2>
+                        <h2>VoteX</h2>
+                        <h2>VoteX</h2>
                     </div>
                 </a>
                 <nav>
@@ -33,9 +33,9 @@
                 <div class="left">
                     <div class="upper">
                         <div class="text">
-                            <p>{{messageone}}</p>
-                            <p>{{messagetwo}}</p>
-                            <p>{{messagethree}}</p> 
+                            <p>Welcome To The</p>
+                            <p>College Election</p>
+                            <p>Voting System</p> 
                         </div>
                     </div>
                     <div class="mid">
@@ -64,18 +64,31 @@
     </div>
   
     <div class="captain3">
-        <h1 class="section-title">{{section_title}}</h1>
-        <p class="upper-para">{{upper_para}}</p>
+        <h1 class="section-title">Why Choose Us?</h1>
+        <p class="upper-para">VoteX is the best voting software due to following reasons</p>
         <div class="container">
-           {{#each features}}
-        <div class="card" style="--clr:#c6d1ea;" data-tilt data-tilt-glare>
-            <div class="content">
-                <img src="{{icon}}" alt="{{title}} icon">
-                <h2>{{title}}</h2>
-                <p>{{{description}}}</p>
+            <div class="card" style="--clr:#c6d1ea;" data-tilt data-tilt-glare>
+                <div class="content">
+                    <img src="https://dymk4s89vutua.cloudfront.net/wp-content/plugins/r2v-api/images/icons/secured.png?x97479
+                    " alt="">
+                    <h2>100% Secure</h2>
+                    <p>Your vote is confidential and protected with advanced encryption to ensure <span style="color: rgb(183, 18, 18);" >complete security</span> throughout the process.</p>
+                </div>
             </div>
-        </div>
-        {{/each}}
+            <div class="card" style="--clr:#c6d1ea;" data-tilt data-tilt-glare>
+                <div class="content">
+                    <img src="https://dymk4s89vutua.cloudfront.net/wp-content/plugins/r2v-api/images/icons/easy-to-use.png?x97479" alt="">
+                    <h2>Easy to Use</h2>
+                    <p>VoteX. election system is very user friendly and voting can be done <span style="color: rgb(183, 18, 18);">anytime and from anywhere within seconds.</span></p>
+                </div>
+            </div>
+            <div class="card" style="--clr:#c6d1ea;" data-tilt data-tilt-glare>
+                <div class="content">
+                    <img src="https://dymk4s89vutua.cloudfront.net/wp-content/plugins/r2v-api/images/icons/school.png?x97479" alt="">
+                    <h2>Colleges Voting</h2>
+                    <p>Online election platform for <span style="color: rgb(183, 18, 18);"> student elections, hostel elections, department elections,</span>polling in classroom.</p>
+                </div>
+                </div>
         </div>
     
         <script>
@@ -91,52 +104,53 @@
             })
         </script>
     </div>
-     <div class="captain2" id="about">
+    <div class="captain2" id="about">
         <div class="left">
-            <img src="/images/aboutpageimg.png" alt="About image">
+            <img src="/images/aboutpageimg.png" alt="">
         </div>
         <div class="right">
             <section class="text">
-                {{#each about.title}}
-                    <h1 class="section-title">{{this}}</h1>
-                {{/each}}
-                <p>{{about.description}}</p>
+                <h1 class="section-title">College Election</h1>
+                <h1 class="section-title">Voting System</h1>
+                <p>Welcome to the College Election Voting System, a secure and innovative platform designed to elevate your voting experience. We believe in the power of student voices, and this system is built to ensure that every vote is counted and every opinion matters. Our mission is to make the election process transparent, easy, and accessible for all students.</p>
                 <div class="icons">
-                    {{#each about.socialLinks}}
-                        <a href="{{this.href}}" style="color: #455EEF;">
-                            <i class="{{this.icon}}"></i>
-                        </a>
-                    {{/each}}
+                    <a href="#">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-instagram' ></i>  
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-twitter' ></i>                    
+                    </a>
                 </div>
             </section>
         </div>
     </div>
-
     <div class="captain4" id="contact">
         <div class="left">
-            {{#each contact.heading}}
-                <h1>{{this}}</h1>
-            {{/each}}
-            <p>{{contact.description}}</p>
+            <h1>Get in Touch</h1>
+            <h1>With Us <img src="/images/Vector.png" alt="" style="height: 25px; width: 25px;"> </h1>
+            <p style="max-width: 370px; letter-spacing: 1.5px ; line-height: 35px;  margin-top: 22px; filter: drop-shadow(2px 3px 3px rgba(0,0,0,0.25));">Feel free to connect with us for any of your needs regarding our services. Our support team is ready to solve any of your issues. Just push a text to us and we will get back to you immediately.</p>
         </div>
         <div class="right">
             <div class="all-text">
-                <h4>{{contact.address.country}}</h4>
+                <h4>India</h4>
                 <div class="first">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p>{{contact.address.location}}</p>
+                    <p>Gurugram, haryana 122</p>
                 </div>
                 <div class="first">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>{{contact.address.email}}</p>
+                    <p>support@collegeelectionsystem.com</p>
                 </div>
                 <div class="first">
                     <i class="fa-solid fa-phone"></i>
-                    <p>{{contact.address.phone}}</p>
+                    <p>+91 7354177006</p>
                 </div>
             </div>
         </div>
     </div>
   
 </body>
-</html> --}}
+</html>

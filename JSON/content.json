@@ -1,0 +1,66 @@
+{
+    "header": {
+        "title": "Div",
+        "navLinks": [
+            { "text": "Home", "href": "/" },
+            { "text": "About", "href": "/about" },
+            { "text": "Contact", "href": "/contact" }
+        ],
+        "loginButton": { "text": "Login", "href": "/login" }
+    },
+    "main": {
+        "left": {
+            "welcomeText": ["Welcome To The", "College Election", "Voting System"],
+            "startVotingButton": { "text": "Start Voting", "href": "/register" },
+            "followUsText": "follow us",
+            "socialLinks": [
+                { "icon": "bx bxl-instagram", "href": "#"},
+                { "icon": "bx bxl-facebook", "href": "#" },
+                { "icon": "bx bxl-twitter", "href": "#" }
+            ]
+        },
+        "right": {
+            "imageUrl": "/images/home.jpg"
+        }
+    },
+    "whyChooseUs": {
+        "sectionTitle": "Why Choose Us?",
+        "description": "VoteX is the best voting software due to following reasons",
+        "cards": [
+            {
+                "title": "100% Secure",
+                "imageUrl": "https://dymk4s89vutua.cloudfront.net/wp-content/plugins/r2v-api/images/icons/secured.png",
+                "description": "Your vote is confidential and protected with advanced encryption to ensure complete security throughout the process."
+            },
+            {
+                "title": "Easy to Use",
+                "imageUrl": "https://dymk4s89vutua.cloudfront.net/wp-content/plugins/r2v-api/images/icons/easy-to-use.png",
+                "description": "VoteX election system is very user-friendly, and voting can be done anytime and from anywhere within seconds."
+            },
+            {
+                "title": "Colleges Voting",
+                "imageUrl": "https://dymk4s89vutua.cloudfront.net/wp-content/plugins/r2v-api/images/icons/school.png",
+                "description": "Online election platform for student elections, hostel elections, department elections, polling in classroom."
+            }
+        ]
+    },
+    "about": {
+        "title": ["College Election", "Voting System"],
+        "description": "Welcome to the College Election Voting System, a secure and innovative platform designed to elevate your voting experience. We believe in the power of student voices, and this system is built to ensure that every vote is counted and every opinion matters.",
+        "socialLinks": [
+            { "icon": "bx bxl-facebook-circle", "href": "#" },
+            { "icon": "bx bxl-instagram", "href": "#" },
+            { "icon": "bx bxl-twitter", "href": "#" }
+        ]
+    },
+    "contact": {
+        "heading": ["Get in Touch", "With Us"],
+        "description": "Feel free to connect with us for any of your needs regarding our services. Our support team is ready to solve any of your issues. Just push a text to us and we will get back to you immediately.",
+        "address": {
+            "country": "India",
+            "location": "Gurugram, Haryana 122",
+            "email": "support@collegeelectionsystem.com",
+            "phone": "+91 7354177006"
+        }
+    }
+}

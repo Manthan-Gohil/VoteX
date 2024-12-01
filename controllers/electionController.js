@@ -1,6 +1,7 @@
 const departmentModel = require('../models/department-model');
 const candidateModel = require('../models/candidate-model');
 const voteModel = require('../models/vote-model');
+const userModel = require('../models/user-model');
 
 module.exports.getActiveElection = async (req, res) => {
   const departments = await departmentModel.find();
@@ -16,7 +17,7 @@ module.exports.getVotingPage = async (req, res) => {
 
 module.exports.castVote = async (req, res) => {
   const { departmentId, candidateId } = req.body;
-  const userid = req.user.userid;
+  const userid = req.user._id;
 
   const existingVote = await voteModel.findOne({ voter: userid, department: departmentId });
   if (existingVote) return res.status(400).send('You have already voted for this department');
