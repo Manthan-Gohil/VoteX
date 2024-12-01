@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/voting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <header><i>
+        <h1>Your Vote, Your Voice</h1>
+        <p>(Shape the Future of Our College)</p>
+    </i></header>
+    <div class="container swiper">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+
+                <!-- Loop through candidates and create a form for each one -->
+                <% candidates.forEach((candidate, index) => { %>
+                    <div class="card-item swiper-slide">
+                        <img src="/images/image.png" alt="user-image" class="user-image">
+                        <h2 class="user-name"><%= candidate.name %></h2>
+                        <p class="user-profession">Running to be: <span style="color: #455EEF;"><%= department.name %></span></p>
+                        <p class="description"><%= candidate.bio %></p>
+                        
+                        <!-- Voting form for the candidate -->
+                        <form id="voteForm_<%= candidate._id %>" action="/vote" method="post">
+                            <input type="hidden" name="departmentId" value="<%= department._id %>">
+                            <input type="hidden" name="candidateId" value="<%= candidate._id %>">
+                            <button type="button" class="message-button" onclick="confirmVote('voteForm_<%= candidate._id %>')">Vote now</button>
+                        </form>
+                    </div>
+                <% }); %>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/javascripts/script.js"></script>
+    <script>
+        // JavaScript function to confirm vote
+        function confirmVote(formId) {
+            if (confirm("Are you sure you want to vote for this candidate?")) {
+                // Submit the form if user confirms
+                document.getElementById(formId).submit();
+            } else {
+                // Do nothing if user cancels
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

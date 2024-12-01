@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(#fff, #BDD0FB);
+}
+
+/* Upper Section */
+.upper {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.upper h1 {
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 550;
+    filter: drop-shadow(5px 6px 8px rgba(0, 0, 0, 0.5));
+    margin-bottom: 20px;
+}
+
+.upper h1::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: black;
+    margin: 10px auto 0;
+}
+
+/* Lower Section */
+.lower {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card Containers */
+.one, .two {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.first, .second, .third, .fourth {
+    flex: 1 1 45%;
+    max-width: 440px;
+    min-width: 280px;
+    height: 220px;
+    border: 1px solid black;
+    background: #DEE8FD;
+    filter: drop-shadow(5px 6px 8px rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.first h3, .second h3, .third h3, .fourth h3 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.first h2, .second h2, .third h2, .fourth h2 {
+    font-weight: 550;
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.first p, .second p, .third p, .fourth p {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* Repeated Style for h3 Elements */
+.first h3::after, .second h3::after, .third h3::after, .fourth h3::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: black;
+    margin: 7px auto 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 380px) {
+    body {
+        background-color: rgb(46, 42, 42);
+    }
+
+    .upper {
+        background-color: rgb(46, 42, 42);
+        padding: 10px;
+    }
+
+    .lower {
+        background-color: rgb(46, 42, 42);
+        padding: 10px;
+    }
+
+    .one, .two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first, .second, .third, .fourth {
+        width: 100%;
+        max-width: 90%;
+        background-color: rgb(46, 42, 42);
+        border: 1px solid #2980b9;
+        box-shadow: 0 0 5px #2980b9, 0 0 25px #2980b9;
+    }
+
+    h3 {
+        color: white;
+        font-size: 20px;
+    }
+
+    .upper h1 {
+        font-size: 30px;
+        background: linear-gradient(to right, #7D97F4, #2980b9, #487bff, #2980b9, #fc72ff);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .first p, .second p, .third p, .fourth p {
+        font-size: 10px;
+    }
+
+    .first h2, .second h2, .third h2, .fourth h2 {
+        font-size: 22px;
+        color: #2980b9;
+    }
+
+    a {
+        color: red;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 480px) {
+    body {
+        background-color: rgb(46, 42, 42);
+    }
+
+    .upper {
+        background-color: rgb(46, 42, 42);
+        padding: 10px;
+    }
+
+    .lower {
+        background-color: rgb(46, 42, 42);
+        padding: 10px;
+    }
+
+    .one, .two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first, .second, .third, .fourth {
+        width: 90%;
+        margin: 0 auto;
+        background-color: rgb(46, 42, 42);
+        border: 1px solid #2980b9;
+        box-shadow: 0 0 5px #2980b9, 0 0 25px #2980b9;
+    }
+
+    h3 {
+        color: white;
+        font-size: 20px;
+    }
+
+    .upper h1 {
+        font-size: 30px;
+        background: linear-gradient(to right, #7D97F4, #2980b9, #487bff, #2980b9, #fc72ff);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .first p, .second p, .third p, .fourth p {
+        font-size: 10px;
+    }
+
+    .first h2, .second h2, .third h2, .fourth h2 {
+        font-size: 22px;
+        color: #2980b9;
+    }
+
+    a {
+        color: red;
+    }
+}

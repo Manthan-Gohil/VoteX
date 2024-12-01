@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body>
+    <!-- <section> -->
+        <div class="login-left">
+            <div class="upper">
+                <a href="/" style="padding-left: 30px;">
+                    <div class="captain1-content">
+                        <h2>VoteX</h2>
+                        <h2>VoteX</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="lower"></div>
+        </div>
+        <div class="login-right">
+            <div class="login-box">
+                <form action="/login" method="post">
+                    <h2>Login</h2>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+    
+                    <a href="/dashboard" style="text-decoration: none; color: #fff;">
+                            <button type="submit" class="login-button">
+                            Login
+                            </button>
+                        </a>
+                    <div class="register-link">
+                        <p>Don't have an account?
+                            <a href="/register">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <!-- </section> -->
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

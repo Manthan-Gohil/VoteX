@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="upper">
+                <a href="/" style="position: relative; left: 60px;">
+                    <div class="captain1-content">
+                        <h2>VoteX</h2>
+                        <h2>VoteX</h2>
+                    </div>
+                </a>
+                <h1>Create Account</h1>
+            </div>
+            <div class="lower"></div>
+        </div>
+        <div class="right">
+            <div class="login-box">
+                <form action="/register" method="post" style="width: 90%;">
+                    <div class="input-box">
+                        <input type="text" name="username" required>
+                        <label>Full Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="student_id" required>
+                        <label>Student ID</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required>
+                        <label>E-mail Address</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="image" required>
+                        <label>Image-url</label>
+                    </div>
+                    <a href="/dashboard" style="text-decoration: none; color: #fff;">
+                        <button type="submit" class="login-button">
+                        Create Account
+                        </button>
+                    </a>
+                    <div class="register-link">
+                        <p>Already have an account?
+                            <a href="/login">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

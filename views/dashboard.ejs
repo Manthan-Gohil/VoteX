@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/dashboard.css">
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="<%= user.image %>" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name"><%= user.username %></h2>
+                        <p class="description">              
+                            A dedicated B.Tech <span style="color: #4070f4; font-weight: 500;">CSE student </span>at the School of Engineering and Technology <span style="color: #4070f4; font-weight: 500;">(SOET),</span>  with enrollment number <span style="color: #4070f4; font-weight: 500;"><%= user.student_id %></span>  committed to building expertise in computer science and engineering principles.
+                        </p>
+                        <div class="btn-box">
+                            <a href="/activeelection" style="color: #fff; text-decoration: none;">
+                                <button class="button">
+                                    Vote Now
+                                </button>
+                            </a>
+                            <a href="/logout" style="text-decoration: none; color: #fff;">
+                                <button class="button" style="background-color: rgb(196, 74, 74);">
+                                Log Out
+                                </button>
+                             </a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
