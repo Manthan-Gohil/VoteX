@@ -47,12 +47,6 @@ Deployed live on [Render](https://votex-8xgx.onrender.com/), Votex ensures seaml
 - 🗳️ **Vote Casting**
   - One user, one vote rule enforcement
   - Prevention of duplicate or fraudulent voting
-- 📊 **Live Results**
-  - Real-time vote counting and result updates
-- 👨‍💼 **Admin Panel**
-  - View registered users
-  - Manage candidates
-  - Monitor votes
 
 ---
 ## 🧑‍💻 Installation & Setup
@@ -72,7 +66,7 @@ npm install
 ### 3. Run the Server
 
 ```bash
-npm start
+npm run dev 
 ```
 ## ✨ Contributors
 
